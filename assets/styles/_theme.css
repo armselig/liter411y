@@ -1,0 +1,19 @@
+/* Default styles */
+
+:root {
+    color-scheme: light dark;
+
+    --asl-c-white: light-dark(oklab(0.99 0 0), oklab(0.18 -0.01 0));
+    --asl-c-black: light-dark(oklab(0.26 -0.02 0), oklab(0.92 0 0));
+    --asl-c-primary: oklab(0.75 -0.087 -0.027); /* Unchanged - works in both */
+    --asl-c-secondary: color-mix(
+        in oklab,
+        var(--brand-primary) 30%,
+        oklab(75% 0.15 0.1)
+    );
+
+    /* Spacing - unchanged */
+    --asl-space-md: 1rem;
+    --asl-space-sm: calc(var(--space-md) * 0.5);
+    --asl-space-lg: calc(var(--space-md) * 2);
+}

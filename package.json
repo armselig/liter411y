@@ -1,0 +1,31 @@
+{
+  "name": "liter411y",
+  "version": "0.1.0",
+  "description": "Design System built with Web Components",
+  "author": "Hendrik Neumann <henne@armselig.net>",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "components/index.js",
+  "module": "components/index.js",
+  "imports": {
+    "#components/*": "./components/*.js"
+  },
+  "exports": {
+    "./*": "./components/*.js"
+  },
+  "sideEffects": [
+    "./components/**/*.register.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=24.14.0",
+    "npm": ">=11.9.0"
+  },
+  "packageManager": "npm@11.9.0+sha512.04166853ddba142ca98f86fb57b1258a7c6c59ccb82acb3cf141b77a315898acaaed47395e74f7e0c7b69c486008e68be6a6381ef1aee5a23dd82e0e61decd68",
+  "dependencies": {
+    "lit": "3.3.2"
+  }
+}
